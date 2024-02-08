@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Style -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="front">
+      <!-- Input selector -->
+      <input name="inputFile" type="file" multiple>
+      <br>
+      <!-- Slicing mode selector -->
+      <select id="slicingModeSelector" hidden>
+        <option value="0">I</option>
+        <option value="1">J</option>
+        <option value="2" selected>K</option>
+        <option value="3">X (sagittal)</option>
+        <option value="4">Y (coronal)</option>
+        <option value="5">Z (axial)</option>
+      </select>
+    </div>
+
+    <!-- Viewer container -->
+    <div id="viewer" class="fill"></div>
+    <div id="metaData" class="fill">
+      <label id="top" class="top hcenter"></label>
+      <label id="bottom" class="bottom hcenter"></label>
+      <label id="left" class="left vcenter"></label>
+      <label id="right" class="right vcenter"></label>
+    </div>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>
